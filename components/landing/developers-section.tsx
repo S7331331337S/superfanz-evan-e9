@@ -5,52 +5,52 @@ import { Copy, Check } from "lucide-react";
 
 const codeExamples = [
   {
-    label: "Install",
-    code: `npm install @optimus/sdk
-
-# or
-yarn add @optimus/sdk
-pnpm add @optimus/sdk`,
-  },
-  {
-    label: "Initialize",
-    code: `import { Optimus } from '@optimus/sdk'
-
-const optimus = new Optimus({
-  apiKey: process.env.OPTIMUS_KEY
+    label: "Browse",
+    code: `// Find exclusive Pro Cards
+superfanz.cards.search({
+  athlete: 'Patrick Mahomes',
+  edition: 'championship'
 })`,
   },
   {
-    label: "Deploy",
-    code: `const app = await optimus.deploy({
-  name: 'my-app',
-  region: 'auto',
-  scaling: {
-    min: 1,
-    max: 100
-  }
+    label: "Collect",
+    code: `// Add to your collection
+const card = await superfanz.acquire({
+  cardId: 'mahomes-sb-mvp-2024',
+  tier: 'platinum'
 })
 
-console.log('Live at:', app.url)`,
+card.unlock('vip-perks')`,
+  },
+  {
+    label: "Trade",
+    code: `// Trade with other collectors
+await superfanz.trade({
+  offer: 'curry-finals-gold',
+  request: 'lebron-allstar-2024',
+  message: 'Fair trade?'
+})
+
+// Trade request sent!`,
   },
 ];
 
 const features = [
   { 
-    title: "TypeScript native", 
-    description: "Full type safety with auto-generated types."
+    title: "Instant access", 
+    description: "View and manage your collection anytime."
   },
   { 
-    title: "Zero config", 
-    description: "Sensible defaults that just work."
+    title: "Secure trading", 
+    description: "Protected transactions with fellow collectors."
   },
   { 
-    title: "Edge-ready", 
-    description: "Runs anywhere: Node, Deno, Bun, browsers."
+    title: "Real-time drops", 
+    description: "Get notified when new cards release."
   },
   { 
-    title: "12KB gzipped", 
-    description: "Lightweight with zero dependencies."
+    title: "Mobile friendly", 
+    description: "Collect and trade on any device."
   },
 ];
 
@@ -119,16 +119,16 @@ export function DevelopersSection() {
           >
             <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
               <span className="w-8 h-px bg-foreground/30" />
-              For developers
+              Collector Experience
             </span>
             <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-8">
-              Built by devs.
+              Built for fans.
               <br />
-              <span className="text-muted-foreground">For devs.</span>
+              <span className="text-muted-foreground">By fans.</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-12 leading-relaxed">
-              A thoughtfully designed SDK that gets out of your way. 
-              Ship faster with intuitive APIs and exceptional documentation.
+              An intuitive platform designed for collectors of all levels. 
+              Browse, collect, and trade with ease across our seamless interface.
             </p>
             
             {/* Features */}
@@ -220,11 +220,11 @@ export function DevelopersSection() {
             {/* Links */}
             <div className="mt-6 flex items-center gap-6 text-sm">
               <a href="#" className="text-foreground hover:underline underline-offset-4">
-                Read the docs
+                Explore marketplace
               </a>
               <span className="text-foreground/20">|</span>
               <a href="#" className="text-muted-foreground hover:text-foreground">
-                View on GitHub
+                View all cards
               </a>
             </div>
           </div>

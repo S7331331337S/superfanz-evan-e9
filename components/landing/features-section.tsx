@@ -5,26 +5,26 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Instant Deployment",
-    description: "Push to production in seconds. Our edge network ensures your applications load instantly, anywhere in the world.",
+    title: "Exclusive Pro Cards",
+    description: "Collect limited-edition digital cards of your favorite athletes. Each card unlocks unique perks, from signed merchandise to meet-and-greets.",
     visual: "deploy",
   },
   {
     number: "02",
-    title: "AI-Native Workflows",
-    description: "Build intelligent applications with built-in AI capabilities. From inference to training, everything scales automatically.",
+    title: "Fan Rewards Program",
+    description: "Earn points for every card you collect and every game you attend. Redeem for VIP experiences, merchandise, and exclusive content.",
     visual: "ai",
   },
   {
     number: "03",
-    title: "Real-time Collaboration",
-    description: "Work together seamlessly. Live preview, instant feedback, and version control that actually makes sense.",
+    title: "Community Connect",
+    description: "Join a global community of superfans. Trade cards, discuss games, and compete in leaderboards with fellow collectors.",
     visual: "collab",
   },
   {
     number: "04",
-    title: "Enterprise Security",
-    description: "Bank-grade encryption, SOC 2 compliance, and granular access controls. Your data stays yours.",
+    title: "Verified Authenticity",
+    description: "Every Pro Card is blockchain-verified and officially licensed. Your collection is secure, authentic, and truly yours.",
     visual: "security",
   },
 ];
@@ -323,16 +323,16 @@ export function FeaturesSection() {
         <div className="mb-16 lg:mb-24">
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Capabilities
+            Pro Card Benefits
           </span>
           <h2
             className={`text-4xl lg:text-6xl font-display tracking-tight transition-all duration-700 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
           >
-            Everything you need.
+            More than cards.
             <br />
-            <span className="text-muted-foreground">Nothing you don&apos;t.</span>
+            <span className="text-muted-foreground">Real fan experiences.</span>
           </h2>
         </div>
 

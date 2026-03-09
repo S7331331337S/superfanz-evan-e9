@@ -3,18 +3,18 @@
 import { useEffect, useState, useRef } from "react";
 
 const integrations = [
-  { name: "GitHub", category: "Version Control" },
-  { name: "Slack", category: "Communication" },
-  { name: "Stripe", category: "Payments" },
-  { name: "PostgreSQL", category: "Database" },
-  { name: "Redis", category: "Cache" },
-  { name: "AWS", category: "Cloud" },
-  { name: "MongoDB", category: "Database" },
-  { name: "Vercel", category: "Hosting" },
-  { name: "Figma", category: "Design" },
-  { name: "Linear", category: "Project Management" },
-  { name: "Notion", category: "Documentation" },
-  { name: "OpenAI", category: "AI/ML" },
+  { name: "NBA", category: "Basketball" },
+  { name: "NFL", category: "Football" },
+  { name: "MLB", category: "Baseball" },
+  { name: "NHL", category: "Hockey" },
+  { name: "MLS", category: "Soccer" },
+  { name: "UFC", category: "MMA" },
+  { name: "PGA", category: "Golf" },
+  { name: "ATP", category: "Tennis" },
+  { name: "F1", category: "Racing" },
+  { name: "WWE", category: "Wrestling" },
+  { name: "WNBA", category: "Basketball" },
+  { name: "Premier League", category: "Soccer" },
 ];
 
 export function IntegrationsSection() {
@@ -44,16 +44,16 @@ export function IntegrationsSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
             <span className="w-8 h-px bg-foreground/30" />
-            Integrations
+Leagues & Sports
             <span className="w-8 h-px bg-foreground/30" />
           </span>
           <h2 className="text-4xl lg:text-6xl font-display tracking-tight mb-6">
-            Works with everything
+            Every league.
             <br />
-            you already use.
+            Every sport you love.
           </h2>
           <p className="text-xl text-muted-foreground">
-            200+ pre-built integrations. Connect your entire stack in minutes.
+            Official partnerships with 50+ leagues. Collect cards from thousands of athletes.
           </p>
         </div>
 

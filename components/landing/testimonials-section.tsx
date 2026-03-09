@@ -4,32 +4,32 @@ import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    quote: "Optimus transformed our deployment pipeline. What used to take hours now happens in seconds.",
-    author: "Sarah Chen",
-    role: "CTO",
-    company: "Meridian Labs",
-    metric: "10x faster deployments",
+    quote: "BNE Pro Cards changed how I connect with my favorite players. The VIP experiences are incredible.",
+    author: "Mike Thompson",
+    role: "Collector",
+    company: "Lakers Superfan",
+    metric: "150+ cards collected",
   },
   {
-    quote: "The developer experience is unmatched. Our team's productivity has never been higher.",
-    author: "Marcus Webb",
-    role: "Engineering Lead",
-    company: "Flux Systems",
-    metric: "40% more features shipped",
+    quote: "Met my childhood hero through the Legend membership. This platform is a dream come true for any fan.",
+    author: "Jessica Rivera",
+    role: "Pro Collector",
+    company: "NFL Enthusiast",
+    metric: "3 athlete meetups",
   },
   {
-    quote: "Finally, infrastructure that scales with our ambition. Zero downtime since we switched.",
-    author: "Elena Rodriguez",
-    role: "VP Engineering",
-    company: "Beacon AI",
-    metric: "99.99% uptime",
+    quote: "The trading community is amazing. Made friends from around the world who share my passion for sports.",
+    author: "David Park",
+    role: "Collector",
+    company: "Multi-Sport Fan",
+    metric: "500+ trades completed",
   },
   {
-    quote: "The integrations are seamless. We connected our entire stack in a single afternoon.",
-    author: "James Liu",
-    role: "Founder",
-    company: "Prism Analytics",
-    metric: "50+ integrations used",
+    quote: "Courtside seats through my Pro Card collection. Still can't believe it's real. Best investment ever.",
+    author: "Amanda Foster",
+    role: "Legend Member",
+    company: "NBA Collector",
+    metric: "12 VIP experiences",
   },
 ];
 
@@ -56,7 +56,7 @@ export function TestimonialsSection() {
         {/* Section Label */}
         <div className="flex items-center gap-4 mb-16">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase">
-            What people say
+            Fan stories
           </span>
           <div className="flex-1 h-px bg-foreground/10" />
           <span className="font-mono text-xs text-muted-foreground">
@@ -138,7 +138,7 @@ export function TestimonialsSection() {
         {/* Company Logos Marquee Label */}
         <div className="mt-24 pt-12 border-t border-foreground/10">
           <p className="font-mono text-xs tracking-widest text-muted-foreground uppercase mb-8 text-center">
-            Trusted by forward-thinking teams
+            Join fan communities worldwide
           </p>
         </div>
       </div>
@@ -148,7 +148,7 @@ export function TestimonialsSection() {
         <div className="flex gap-16 items-center marquee">
           {[...Array(2)].map((_, setIdx) => (
             <div key={setIdx} className="flex gap-16 items-center shrink-0">
-              {["Meridian Labs", "Flux Systems", "Beacon AI", "Prism Analytics", "Nova Tech", "Quantum Corp", "Atlas Digital", "Vertex Labs"].map(
+              {["Lakers Nation", "Chiefs Kingdom", "Yankees Universe", "Warriors Fans", "Cowboys Nation", "Celtics Pride", "Heat Culture", "Packers Faithful"].map(
                 (company) => (
                   <span
                     key={`${setIdx}-${company}`}

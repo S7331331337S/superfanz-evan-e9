@@ -5,50 +5,50 @@ import { ArrowRight, Check } from "lucide-react";
 
 const plans = [
   {
-    name: "Starter",
-    description: "For individuals and small projects",
+    name: "Fan",
+    description: "Start your collection journey",
     price: { monthly: 0, annual: 0 },
     features: [
-      "Up to 3 projects",
-      "1GB storage",
-      "Community support",
-      "Basic analytics",
-      "SSL certificates",
+      "Access to common cards",
+      "Basic trading features",
+      "Community forums",
+      "Weekly drops access",
+      "Mobile app access",
     ],
     cta: "Start free",
     popular: false,
   },
   {
-    name: "Pro",
-    description: "For growing teams and businesses",
-    price: { monthly: 29, annual: 24 },
+    name: "Pro Collector",
+    description: "For dedicated superfans",
+    price: { monthly: 19, annual: 15 },
     features: [
-      "Unlimited projects",
-      "100GB storage",
-      "Priority support",
-      "Advanced analytics",
-      "Custom domains",
-      "Team collaboration",
-      "API access",
+      "Early access to all drops",
+      "Exclusive rare cards",
+      "Priority trading",
+      "VIP event invites",
+      "Athlete Q&A sessions",
+      "Merchandise discounts",
+      "Collection analytics",
     ],
-    cta: "Start trial",
+    cta: "Go Pro",
     popular: true,
   },
   {
-    name: "Enterprise",
-    description: "For large-scale operations",
+    name: "Legend",
+    description: "Ultimate fan experience",
     price: { monthly: null, annual: null },
     features: [
       "Everything in Pro",
-      "Unlimited storage",
-      "24/7 dedicated support",
-      "Custom integrations",
-      "SLA guarantee",
-      "On-premise option",
-      "Security audit",
-      "Custom contracts",
+      "1-on-1 athlete meets",
+      "Signed memorabilia",
+      "Courtside/sideline access",
+      "Custom card creation",
+      "Personal concierge",
+      "Exclusive Legend events",
+      "Lifetime membership",
     ],
-    cta: "Contact sales",
+    cta: "Apply now",
     popular: false,
   },
 ];
@@ -62,15 +62,15 @@ export function PricingSection() {
         {/* Header */}
         <div className="max-w-3xl mb-20">
           <span className="font-mono text-xs tracking-widest text-muted-foreground uppercase block mb-6">
-            Pricing
+Membership
           </span>
           <h2 className="font-display text-5xl md:text-6xl lg:text-7xl tracking-tight text-foreground mb-6">
-            Simple, transparent
+            Choose your
             <br />
-            <span className="text-stroke">pricing</span>
+            <span className="text-stroke">membership</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-xl">
-            Start free and scale as you grow. No hidden fees, no surprises.
+            Start free and upgrade anytime. Unlock exclusive perks and experiences.
           </p>
         </div>
 
@@ -172,9 +172,9 @@ export function PricingSection() {
 
         {/* Bottom Note */}
         <p className="mt-12 text-center text-sm text-muted-foreground">
-          All plans include automatic updates, HTTPS, and DDoS protection.{" "}
+          All memberships include secure trading, verified authenticity, and 24/7 support.{" "}
           <a href="#" className="underline underline-offset-4 hover:text-foreground transition-colors">
-            Compare all features
+            Compare all memberships
           </a>
         </p>
       </div>

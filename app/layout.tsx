@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Optimus - Platform to Create',
-  description: 'The creative platform for teams who ship. Build, deploy, and scale with unprecedented velocity.',
+  title: 'BNE Superfanz - Pro Card | The Ultimate Fan Experience',
+  description: 'Collect exclusive Pro Cards, connect with your favorite athletes, and unlock premium fan experiences. Join the ultimate sports community.',
   generator: 'v0.app',
 }
 

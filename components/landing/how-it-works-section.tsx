@@ -5,38 +5,38 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     number: "I",
-    title: "Connect your tools",
-    description: "Integrate with your existing stack in minutes. We support 200+ data sources out of the box.",
-    code: `import { optimus } from '@optimus/core'
-
-optimus.connect({
-  source: 'your-database',
-  sync: true
+    title: "Create your account",
+    description: "Sign up in seconds and link your favorite teams. Get personalized card recommendations based on your interests.",
+    code: `// Join BNE Superfanz
+superfanz.register({
+  email: 'fan@email.com',
+  teams: ['Lakers', 'Chiefs']
 })`,
   },
   {
     number: "II",
-    title: "Build your workflow",
-    description: "Design powerful automations with our visual builder or write code directly.",
-    code: `optimus.workflow('process', {
-  trigger: 'event',
-  actions: [
-    'validate',
-    'transform', 
-    'deliver'
+    title: "Collect Pro Cards",
+    description: "Browse exclusive drops, trade with collectors, and build your ultimate collection of athlete cards.",
+    code: `superfanz.collect({
+  card: 'lebron-gold-2024',
+  edition: 'limited',
+  perks: [
+    'signed-jersey',
+    'vip-access', 
+    'meet-greet'
   ]
 })`,
   },
   {
     number: "III",
-    title: "Ship to production",
-    description: "Deploy globally with zero configuration. Your app goes live in under 30 seconds.",
-    code: `optimus.deploy({
-  target: 'production',
-  regions: 'auto'
+    title: "Unlock rewards",
+    description: "Redeem your collection for exclusive experiences, merchandise, and once-in-a-lifetime fan moments.",
+    code: `superfanz.redeem({
+  reward: 'courtside-seats',
+  event: 'NBA Finals 2024'
 })
 
-// Deployed to 12 regions`,
+// Reward confirmed!`,
   },
 ];
 
@@ -97,7 +97,7 @@ export function HowItWorksSection() {
           >
             Three steps.
             <br />
-            <span className="text-background/50">Infinite possibilities.</span>
+            <span className="text-background/50">Unlimited fan moments.</span>
           </h2>
         </div>
 
@@ -151,7 +151,7 @@ export function HowItWorksSection() {
                   <div className="w-3 h-3 rounded-full bg-background/20" />
                   <div className="w-3 h-3 rounded-full bg-background/20" />
                 </div>
-                <span className="text-xs font-mono text-background/40">workflow.ts</span>
+                <span className="text-xs font-mono text-background/40">superfanz.js</span>
               </div>
 
               {/* Code content */}
