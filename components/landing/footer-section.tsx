@@ -2,6 +2,7 @@
 
 import { ArrowUpRight } from "lucide-react";
 import { AnimatedWave } from "./animated-wave";
+import { SuperfanzLogo } from "./logo";
 
 const footerLinks = {
   Collect: [
@@ -49,9 +50,9 @@ export function FooterSection() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2">
-              <a href="#" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display">BNE</span>
-                <span className="text-xs text-muted-foreground font-mono">SUPERFANZ</span>
+              <a href="#" className="inline-flex items-center gap-2.5 mb-6">
+                <SuperfanzLogo size={36} />
+                <span className="text-xs font-mono tracking-widest uppercase text-muted-foreground">Superfanz</span>
               </a>
 
               <p className="text-muted-foreground leading-relaxed mb-8 max-w-xs">

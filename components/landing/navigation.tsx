@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { SuperfanzLogo } from "./logo";
 
 const navLinks = [
   { name: "Pro Cards", href: "#features" },
@@ -44,9 +45,9 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl" : "text-2xl"}`}>BNE</span>
-            <span className={`text-muted-foreground font-mono transition-all duration-500 ${isScrolled ? "text-[10px] mt-0.5" : "text-xs mt-1"}`}>SUPERFANZ</span>
+          <a href="#" className="flex items-center gap-2.5 group">
+            <SuperfanzLogo size={isScrolled ? 28 : 34} className={`transition-all duration-500`} />
+            <span className={`font-mono tracking-widest uppercase transition-all duration-500 ${isScrolled ? "text-[10px]" : "text-xs"}`}>Superfanz</span>
           </a>
 
           {/* Desktop Navigation */}
