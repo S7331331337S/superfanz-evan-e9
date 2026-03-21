@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 import { SuperfanzLogo } from "./logo";
 
 const navLinks = [
@@ -45,10 +46,10 @@ export function Navigation() {
           }`}
         >
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
+          <Link href="/" className="flex items-center gap-2.5 group">
             <SuperfanzLogo size={isScrolled ? 28 : 34} className={`transition-all duration-500`} />
             <span className={`font-mono tracking-widest uppercase transition-all duration-500 ${isScrolled ? "text-[10px]" : "text-xs"}`}>Superfanz</span>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-12">
@@ -66,14 +67,15 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
+            <Link href="/sign-in" className={`text-foreground/70 hover:text-foreground transition-all duration-500 ${isScrolled ? "text-xs" : "text-sm"}`}>
               Sign in
-            </a>
+            </Link>
             <Button
+              asChild
               size="sm"
               className={`bg-foreground hover:bg-foreground/90 text-background rounded-full transition-all duration-500 ${isScrolled ? "px-4 h-8 text-xs" : "px-6"}`}
             >
-              Get Pro Card
+              <Link href="/dashboard">Launch App</Link>
             </Button>
           </div>
 
@@ -131,17 +133,19 @@ export function Navigation() {
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
             <Button 
+              asChild
               variant="outline" 
               className="flex-1 rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Sign in
+              <Link href="/sign-in">Sign in</Link>
             </Button>
             <Button 
+              asChild
               className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Get Pro Card
+              <Link href="/dashboard">Launch App</Link>
             </Button>
           </div>
         </div>
