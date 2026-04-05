@@ -4,7 +4,7 @@ import { ReactNode } from "react"
 const links = [
   { href: "/dashboard", label: "Dashboard" },
   { href: "/cards", label: "Cards" },
-  { href: "/athletes", label: "Athletes" },
+  { href: "/athletes", label: "Creators" },
   { href: "/community", label: "Community" },
 ]
 
