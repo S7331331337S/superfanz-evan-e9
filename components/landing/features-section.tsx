@@ -6,19 +6,19 @@ const features = [
   {
     number: "01",
     title: "Exclusive Pro Cards",
-    description: "Collect limited-edition digital cards of your favorite athletes. Each card unlocks unique perks, from signed merchandise to meet-and-greets.",
+    description: "Collect limited-edition digital cards of your favorite creators. Each card unlocks unique perks, from signed merchandise to exclusive content and meet-and-greets.",
     visual: "deploy",
   },
   {
     number: "02",
     title: "Fan Rewards Program",
-    description: "Earn points for every card you collect and every game you attend. Redeem for VIP experiences, merchandise, and exclusive content.",
+    description: "Earn points for every card you collect and every event you attend. Redeem for VIP experiences, merchandise, and exclusive content.",
     visual: "ai",
   },
   {
     number: "03",
     title: "Community Connect",
-    description: "Join a global community of superfans. Trade cards, discuss games, and compete in leaderboards with fellow collectors.",
+    description: "Join a global community of superfans. Trade cards, discuss releases, and compete in leaderboards with fellow collectors.",
     visual: "collab",
   },
   {
