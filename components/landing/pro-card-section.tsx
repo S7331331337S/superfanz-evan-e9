@@ -1,4 +1,5 @@
 import { ProCard } from "./pro-card";
+import { CardSegmentPreviews } from "./card-segment-previews";
 
 export function ProCardSection() {
   return (
@@ -29,6 +30,7 @@ export function ProCardSection() {
       </p>
 
       <ProCard />
+      <CardSegmentPreviews />
     </section>
   );
 }
